@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #212121;
+  --secundary-color: #2196f3;
+  --third-color: #ffffff;
+  --detail-color: #757575;
+  --back-color: #2f303a;
+  --back-port-color: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+/*generic*/
+
+.log {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--secundary-color);
+}
+
+/*nav*/
+
+.header-contact-section a {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--detail-color);
+}
+.header-contact-section a:hover,
+.header-contact-section a:focus {
+  color: var(--secundary-color);
+}
+
+.nav-item {
+  color: var(--primary-color);
+  size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--secundary-color);
+}
+
+.link-active {
+  color: var(--secundary-color);
+}
+
+.introduction h1 {
+  font-weight: 900;
+  color: var(--third-color);
+  background-color: var(--back-color);
+}
+
+.request-services {
+  border: none;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: var(--third-color);
+  background-color: var(--secundary-color);
+}
+
+/*benefits*/
+
+.text-benefits {
+  font-weight: 400;
+  color: var(--detail-color);
+}
+
+.text-us {
+  font-weight: 700;
+}
+
+/*portfolio*/
+
+/*filters*/
+
+.filter-item {
+  cursor: pointer;
+  color: var(--primary-color);
+  border: none;
+  background-color: var(--back-port-color);
+  font-family: 'Roboto', sans-serif;
+}
+.filter-item:hover {
+  background-color: var(--secundary-color);
+  color: var(--third-color);
+}
+
+.portfolio {
+  color: var(--detail-color);
+}
+
+.background-footer {
+  background-color: var(--back-color);
+}
+
+.active-button {
+  color: var(--third-color);
+  background-color: var(--secundary-color);
+}
