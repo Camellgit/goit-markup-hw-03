@@ -15,18 +15,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>hw1</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-header">
         <a class="log" href="./index.html">WebStudio</a>
         <ul class="ul-header">
           <li class="nav-item link-active">
             <a href="./index.html">Studio</a>
           </li>
           <li>
-            <a href="./portfolio.html">Portafolio</a>
+            <a href="./portfolio.html">Portfolio</a>
           </li>
           <li><a href="#">Contacts</a></li>
         </ul>
@@ -97,7 +104,7 @@
       <section class="team-section">
         <h2 class="text-us">Our Team</h2>
         <ul class="imag-container-team">
-          <li>
+          <li class="box-imag">
             <img
               src="./images/andrescubo.jpg"
               alt="Andres Cubo"
@@ -145,8 +152,9 @@
               href="https://goo.gl/maps/UZ35Rtt92iHCTSNJ8"
               target="_blank"
               rel="noopener noreferrer"
-              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-            >
+              >Calz. Ticomán 500, Ciudad de
+              <nav>México, CDMX, México</nav>
+            </a>
           </li>
           <li class="mail-phone">
             <a href="mailto:Info@devstudio.com" class="mail"

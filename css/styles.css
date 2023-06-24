@@ -17,11 +17,17 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
-nav {
+/*
+.box-imag {
+  border-style: ridge;
+  border-color: var(--detail-color);
+}
+*/
+.nav-header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 ul {
@@ -131,14 +137,20 @@ a {
 .benefits-section,
 .images-work,
 .team-section {
-  margin: 5% 0% 5% 0%;
+  padding: 5% 0% 5% 0%;
 }
 
-.benefits-section ul,
+.benefits-section ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  padding: 0px 170px 0px 220px;
+}
+
 .imag-container-work,
 .imag-container-team {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
   margin-top: 4%;
 }
@@ -150,11 +162,15 @@ a {
   width: 270px;
   height: 260px;
 }
+
 .imag-container-team li {
   padding: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 0.2px;
 }
 
 .team-section {
@@ -173,6 +189,7 @@ a {
 
 .contact-address {
   padding-top: 5%;
+  margin-top: 4%;
   height: 252px;
   background-color: var(--back-color);
   display: flex;
@@ -206,20 +223,39 @@ address ul {
 
 /*filters*/
 
+.filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .filter-item {
   cursor: pointer;
   color: var(--primary-color);
   border: none;
   background-color: var(--back-port-color);
   font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  border-radius: 4%;
 }
 .filter-item:hover {
   background-color: var(--secundary-color);
   color: var(--third-color);
 }
 
-.portfolio {
-  color: var(--detail-color);
+.imag-container-projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imag-container-projects li {
+  margin-top: 4%;
 }
 
 .background-footer {

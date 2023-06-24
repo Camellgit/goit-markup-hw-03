@@ -15,13 +15,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>hw2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-header">
         <a class="log" href="./index.html">WebStudio</a>
-        <ul>
+        <ul class="ul-header">
           <li><a href="./index.html">Studio</a></li>
           <li class="nav-item link-active">
             <a href="./portfolio.html">Portfolio</a>
@@ -44,10 +51,10 @@
             <button type="button" class="filter-item">Websites</button>
           </li>
           <li>
-            <button type="button" class="filter-item">Aplications</button>
+            <button type="button" class="filter-item">Applications</button>
           </li>
           <li>
-            <button type="button" class="filter-item">Dessign</button>
+            <button type="button" class="filter-item">Design</button>
           </li>
           <li>
             <button type="button" class="filter-item">Marketing</button>
@@ -55,69 +62,76 @@
         </ul>
       </section>
       <section>
-        <ul class="imag-container projects">
-          <li>
+        <ul class="imag-container-projects">
+          <li class="box-imag">
             <img src="./images/tecnoduck.jpg" alt="Tecnoduck" width="370" />
             <h2>Tecnoduck</h2>
-            <p class="portfolio">Website</p>
+            <p class="text-benefits">Website</p>
           </li>
           <li>
             <img src="./images/poster.jpg" alt="Tecnoduck" width="370" />
-            <h2>Poster de Nueva Orleans vs Estrellas Doradas</h2>
-            <p class="portfolio">Diseño</p>
+            <h2>New Orleans Poster vs Golden Stars</h2>
+            <p class="text-benefits">Design</p>
           </li>
           <li>
             <img src="./images/seafood.jpg" alt="Tecnoduck" width="370" />
-            <h2>Restaurante SeaFood</h2>
-            <p class="portfolio">Aplications</p>
+            <h2>Restaurant SeaFood</h2>
+            <p class="text-benefits">Applications</p>
           </li>
           <li>
             <img src="./images/prime.jpg" alt="Tecnoduck" width="370" />
             <h2>Project Prime</h2>
-            <p class="portfolio">Marketing</p>
+            <p class="text-benefits">Marketing</p>
           </li>
           <li>
             <img src="./images/box.jpg" alt="Tecnoduck" width="370" />
             <h2>Project Boxes</h2>
-            <p class="portfolio">Aplications</p>
+            <p class="text-benefits">Applications</p>
           </li>
           <li>
             <img src="./images/website.jpg" alt="Tecnoduck" width="370" />
-            <h2>Inspiration Unlimits</h2>
-            <p class="portfolio">Website</p>
+            <h2>Inspiration Ulimit</h2>
+            <p class="text-benefits">Website</p>
           </li>
           <li>
             <img src="./images/editionlimit.jpg" alt="Tecnoduck" width="370" />
             <h2>Limited Edition</h2>
-            <p class="portfolio">Disign</p>
+            <p class="text-benefits">Design</p>
           </li>
           <li>
             <img src="./images/lab.jpg" alt="Tecnoduck" width="370" />
             <h2>Project LAB</h2>
-            <p class="portfolio">Marketing</p>
+            <p class="text-benefits">Marketing</p>
           </li>
           <li>
             <img src="./images/bussisnes.jpg" alt="Tecnoduck" width="370" />
-            <h2>Growing Bussisnes</h2>
-            <p class="portfolio">Aplications</p>
+            <h2>Growing Business</h2>
+            <p class="text-benefits">Applications</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a class="log">WebStudio</a>
+    <footer class="contact-address">
+      <a class="log" href="./index.html">WebStudio</a>
       <address>
-        <ul class="header-contact-section">
-          <li>
+        <ul class="footer-contact-section">
+          <li class="office-address">
             <a
               href="https://goo.gl/maps/UZ35Rtt92iHCTSNJ8"
               target="_blank"
               rel="noopener noreferrer"
-              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >Calz. Ticomán 500, Ciudad de
+              <nav>México, CDMX, México</nav>
+            </a>
+          </li>
+          <li class="mail-phone">
+            <a href="mailto:Info@devstudio.com" class="mail"
+              >Info@devstudio.com</a
             >
           </li>
-          <li><a href="mailto:Info@devstudio.com">Info@devstudio.com</a></li>
-          <li><a href="tel:+38 096 111 111 111">38096 111 111 111</a></li>
+          <li class="mail-phone">
+            <a href="tel:+38 096 111 111 111" class="tel">38096 111 111 111</a>
+          </li>
         </ul>
       </address>
     </footer>
