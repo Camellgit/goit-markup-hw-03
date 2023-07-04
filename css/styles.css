@@ -17,12 +17,16 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-/*
-.box-imag {
-  border-style: ridge;
-  border-color: var(--detail-color);
+
+.container {
+  width: 1200px;
 }
-*/
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -88,13 +92,14 @@ a {
 .link-active {
   color: var(--secundary-color);
 }
+
 .introduction {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: var(--back-color);
-  width: 100%;
+  width: 1200px;
   height: 600px;
 }
 .introduction h1 {
@@ -129,22 +134,34 @@ a {
 
 /*benefits*/
 
+.li-team {
+  font-weight: 400;
+  color: var(--detail-color);
+  padding: 0px 2px;
+}
+
+.li-work {
+  padding: 0px 20px 0px;
+}
+
 .text-benefits {
   font-weight: 400;
   color: var(--detail-color);
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 0;
+  padding: 0;
 }
 
-.benefits-section,
-.images-work,
-.team-section {
-  padding: 5% 0% 5% 0%;
+.text-benefits:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .benefits-section ul {
   display: flex;
   flex-direction: row;
-  margin-top: 4%;
-  padding: 0px 170px 0px 220px;
 }
 
 .imag-container-work,
@@ -170,7 +187,11 @@ a {
   align-items: center;
   background-color: #ffffff;
   border-radius: 4px;
-  box-shadow: 0px 0.2px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4);
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 0;
 }
 
 .team-section {
@@ -178,16 +199,12 @@ a {
 }
 
 .text-us {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: 700;
 }
 
-.details-benefits {
-  margin: 1%;
-}
-
 .contact-address {
+  width: 1200px;
   padding-top: 5%;
   margin-top: 4%;
   height: 252px;
@@ -219,6 +236,11 @@ address ul {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.mail-phone a:hover,
+.mail-phone a:focus {
+  color: var(--secundary-color);
+}
 /*portfolio*/
 
 /*filters*/
@@ -241,8 +263,11 @@ address ul {
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.02em;
-  border-radius: 4%;
+  border-radius: 4px;
+  width: 128px;
+  height: 38px;
 }
+.filter-item:focus,
 .filter-item:hover {
   background-color: var(--secundary-color);
   color: var(--third-color);
@@ -252,6 +277,9 @@ address ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
 }
 
 .imag-container-projects li {
@@ -260,11 +288,6 @@ address ul {
 
 .background-footer {
   background-color: var(--back-color);
-}
-
-.active-button {
-  color: var(--third-color);
-  background-color: var(--secundary-color);
 }
 
 .ul-header li {
