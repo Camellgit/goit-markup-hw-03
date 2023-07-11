@@ -25,8 +25,8 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav class="nav-header container">
+    <header class="header">
+      <nav class="nav-header">
         <a class="log" href="./index.html">WebStudio</a>
         <ul class="ul-header">
           <li class="nav-item"><a href="./index.html">Studio</a></li>
@@ -35,15 +35,19 @@
           </li>
           <li class="nav-item"><a href="#">Contacts</a></li>
         </ul>
-        <ul class="header-contact-section">
-          <li><a href="mailto:Info@devstudio.com">Info@devstudio.com</a></li>
-          <li><a href="tel:+38 096 111 111 111">38096 111 111 111</a></li>
-        </ul>
       </nav>
+      <ul class="info-header">
+        <li class="li-item">
+          <a href="mailto:Info@devstudio.com">Info@devstudio.com</a>
+        </li>
+        <li class="li-item">
+          <a href="tel:+38 096 111 111 111">38096 111 111 111</a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="section">
-        <nav class="container">
+        <div class="container">
           <ul class="filters">
             <li>
               <button type="button" class="filter-item">All</button>
@@ -61,10 +65,10 @@
               <button type="button" class="filter-item">Marketing</button>
             </li>
           </ul>
-        </nav>
+        </div>
       </section>
       <section class="section">
-        <nav class="container">
+        <div class="container">
           <ul class="imag-container-projects">
             <li class="text-benefits">
               <img src="./images/tecnoduck.jpg" alt="Tecnoduck" width="370" />
@@ -134,11 +138,11 @@
               </div>
             </li>
           </ul>
-        </nav>
+        </div>
       </section>
     </main>
     <footer class="contact-address">
-      <nav class="container">
+      <div class="container">
         <a class="log" href="./index.html">WebStudio</a>
         <address>
           <ul class="footer-contact-section">
@@ -163,7 +167,7 @@
             </li>
           </ul>
         </address>
-      </nav>
+      </div>
     </footer>
   </body>
 </html>

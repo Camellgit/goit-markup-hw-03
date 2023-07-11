@@ -22,11 +22,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>hw1</title>
+    <title>Home</title>
   </head>
   <body>
-    <header>
-      <nav class="nav-header container">
+    <header class="header">
+      <nav class="nav-header">
         <a class="log" href="./index.html">WebStudio</a>
         <ul class="ul-header">
           <li class="nav-item link-active">
@@ -37,15 +37,15 @@
           </li>
           <li class="nav-item"><a href="#">Contacts</a></li>
         </ul>
-        <ul class="header-contact-section">
-          <li>
-            <a href="mailto:Info@devstudio.com">Info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+38 096 111 111 111">38096 111 111 111</a>
-          </li>
-        </ul>
       </nav>
+      <ul class="info-header">
+        <li class="li-item">
+          <a href="mailto:Info@devstudio.com">Info@devstudio.com</a>
+        </li>
+        <li class="li-item">
+          <a href="tel:+38 096 111 111 111">38096 111 111 111</a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="introduction section">
@@ -56,7 +56,7 @@
       </section>
 
       <section class="section">
-        <nav class="benefits-section container">
+        <div class="benefits-section container">
         <ul>
           <li class="details-benefits">
             <h3>Attention to details</h3>
@@ -95,10 +95,10 @@
           </div>
           </li>
         </ul>
-      </nav>
+      </div>
       </section>
       <section class="images-work section">
-        <nav class="container">
+        <div class="container">
         <h2 class="text-us">What We Do</h2>
         <ul class="imag-container-work">
           <li>
@@ -111,10 +111,10 @@
             <img src="./images/caja3.jpg" width="370" alt="Web Dessign" />
           </li>
         </ul>
-      </nav>
+      </div>
       </section>
       <section class="team-section section">
-        <nav class="container">
+        <div class="container">
         <h2 class="text-us">Our Team</h2>
         <ul class="imag-container-team">
           <li>
@@ -123,9 +123,9 @@
               alt="Andres Cubo"
               width="300px"
             />
-            <h3>Andres Cubo</h3>
             <div class="li-team">
-              <p>Diseñador de Productos</p>
+              <h3>Andres Cubo</h3>
+              <p>Product Designer</p>
             </div>
           </li>
           <li>
@@ -134,9 +134,9 @@
               alt="Carla Palacios"
               width="300"
             />
-            <h3>Carla Palacios</h3>
             <div class="li-team">
-              <p>Desarrolladora Frontend</p>
+              <h3>Carla Palacios</h3>
+              <p>Frontend Developer</p>
             </div>
           </li>
           <li>
@@ -144,9 +144,9 @@
               src="./images/mariodorado.jpg"
               alt="Mario Dorado"
               width="300"
-            />
-            <h3>Mario Dorado</h3>
+            />            
             <div class="li-team">
+              <h3>Mario Dorado</h3>
               <p>Marketing</p>
             </div>
           </li>
@@ -155,19 +155,18 @@
               src="./images/pablomijangos.jpg"
               alt="Pablo Mijangos"
               width="300"
-            />
-            <h3>Pablo Mijangos</h3>
+            />            
             <div class="li-team">
-              <p>Diseñador IU</p>
+              <h3>Pablo Mijangos</h3>
+              <p>IU Designer</p>
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       </section>
-    </main>
-    
+    </main>    
     <footer class="contact-address">
-      <nav class="container">
+      <div class="container">
       <a class="log" href="./index.html">WebStudio</a>
       <address>
         <ul class="footer-contact-section">
@@ -190,7 +189,7 @@
           </li>
         </ul>
       </address>
-    </nav>
+    </div>
     </footer>
   </body>
 </html>

@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+  margin: 0px auto;
   width: 1200px;
 }
 
@@ -27,11 +28,31 @@ body {
   padding-bottom: 94px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-header {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
+}
+
+.info-header {
+  color: var(--detail-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 215px;
+}
+
+.info-header li {
+  margin-left: 25px;
+}
+
+.li-item:hover,
+.li-item:focus {
+  color: var(--secundary-color);
 }
 
 ul {
@@ -57,31 +78,13 @@ a {
 }
 
 /*nav*/
-.header-contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.header-contact-section li {
-  margin-right: 50px;
-}
-
-.header-contact-section a {
-  font-style: normal;
-  text-decoration: none;
-  color: var(--detail-color);
-}
-.header-contact-section a:hover,
-.header-contact-section a:focus {
-  color: var(--secundary-color);
-}
 
 .nav-item {
   color: var(--primary-color);
   size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  margin-right: 25px;
 }
 
 .nav-item:hover,
@@ -99,8 +102,6 @@ a {
   flex-direction: column;
   justify-content: center;
   background-color: var(--back-color);
-  width: 1200px;
-  height: 600px;
 }
 .introduction h1 {
   font-family: 'Roboto';
@@ -130,6 +131,7 @@ a {
   font-weight: 700;
   color: var(--third-color);
   background-color: var(--secundary-color);
+  cursor: pointer;
 }
 
 /*benefits*/
@@ -204,10 +206,8 @@ a {
 }
 
 .contact-address {
-  width: 1200px;
   padding-top: 5%;
   margin-top: 4%;
-  height: 252px;
   background-color: var(--back-color);
   display: flex;
   flex-direction: column;
@@ -290,9 +290,9 @@ address ul {
   background-color: var(--back-color);
 }
 
-.ul-header li {
+/*.ul-header li {
   margin-right: 50px;
-}
+}*/
 
 .ul-header {
   margin-left: 93px;
