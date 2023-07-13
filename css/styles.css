@@ -31,6 +31,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #eee;
 }
 
 .nav-header {
@@ -40,14 +41,11 @@ body {
 
 .info-header {
   color: var(--detail-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 215px;
 }
 
-.info-header li {
-  margin-left: 25px;
+.li-item {
+  color: var(--detail-color);
+  padding-left: 54px;
 }
 
 .li-item:hover,
@@ -57,6 +55,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0px;
 }
 
 a {
@@ -67,7 +66,7 @@ a {
 /*generic*/
 
 .log {
-  margin-left: 215px;
+  margin-top: 9px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   text-decoration: none;
@@ -84,7 +83,7 @@ a {
   size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 .nav-item:hover,
@@ -136,10 +135,19 @@ a {
 
 /*benefits*/
 
+.details-benefits p {
+  text-align: start;
+}
+
 .li-team {
   font-weight: 400;
-  color: var(--detail-color);
+  color: var(--primary-color);
   padding: 0px 2px;
+  text-align: center;
+}
+
+.li-team p {
+  color: var(--detail-color);
 }
 
 .li-work {
@@ -207,7 +215,6 @@ a {
 
 .contact-address {
   padding-top: 5%;
-  margin-top: 4%;
   background-color: var(--back-color);
   display: flex;
   flex-direction: column;
@@ -217,7 +224,7 @@ a {
 address ul {
   display: flex;
   flex-direction: column;
-  margin-left: 178px;
+  padding: 0px;
 }
 
 .office-address {
@@ -295,8 +302,9 @@ address ul {
 }*/
 
 .ul-header {
-  margin-left: 93px;
+  margin-left: 80px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-right: 43px;
 }
